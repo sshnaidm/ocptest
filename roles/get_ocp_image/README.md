@@ -1,17 +1,14 @@
-get_ocp_image
-=========
+# get_ocp_image
 
 The role discovers OCP image from given parameters. It can be used for extracting an `openshift-install` binary from the specific image.
 
-Requirements
-------------
+## Requirements
 
 Ansible installed, `requirements.txt` of role.
 
-Role Variables
-------------
+## Role Variables
 
-Input variables
+### Input variables
 
 --------------
 | Name           | Type | Default Value | Des cription                        | Example |
@@ -20,20 +17,18 @@ Input variables
 |**`get_ocp_image_release`** | string | No default value | Release type of OCP. Choose from: `ci`, `nightly`, `dev-preview`, `stable`, `candidate` | `nightly` |
 |**`get_ocp_image_full_version`** | string | No default value | Full tag version of OCP image. | `4.15.0-0.ci-2023-11-07-184920` |
 
-Output variables
+### Output variables
 
 --------------
 | Name           | Type | Default Value | Des cription                        | Example |
 | -------------- | -----| ------------- | -----------------------------------|---------|
 |**`get_ocp_image_url`** | string | No default value | Discovered OCP image container URL | quay.io/openshift-release-dev/ocp-release@sha256:f8ba6f54eae419aba17926417d950ae18e06021beae9d7947a8b8243ad48353a |
 
-Dependencies
-------------
+## Dependencies
 
 `requests` library for module `ocp_image`
 
-Example Playbook
-----------------
+## Example Playbook
 
 Example of getting OCP image for last stable release of 4.13:
 
@@ -60,12 +55,10 @@ Example of getting OCP image for specific nightly release `4.14.0-0.nightly-2023
                 get_ocp_image_full_version: "4.14.0-0.nightly-2023-11-08-004805"
 ```
 
-License
--------
+## License
 
 Apache 2
 
-Author Information
-------------------
+## Author Information
 
 Telco team
