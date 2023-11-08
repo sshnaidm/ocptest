@@ -35,7 +35,7 @@ class OCPImage:
         if self.release in ("ci", "nightly"):
             self.log.info(f"Finding {self.release} release for tag {self.tag}")
             url = API_URL % (self.tag, self.release)
-            self.log.debug(f"Getting URL {url}", log_args={"priority": "7"})
+            self.log.debug(f"Getting URL {url}")
             response = get_url(url, self.module)
             try:
                 data = json.loads(response)

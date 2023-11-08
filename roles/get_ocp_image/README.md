@@ -22,7 +22,7 @@ Ansible installed, `requirements.txt` of role.
 --------------
 | Name           | Type | Default Value | Des cription                        | Example |
 | -------------- | -----| ------------- | -----------------------------------|---------|
-|**`get_ocp_image_url`** | string | No default value | Discovered OCP image container URL | quay.io/openshift-release-dev/ocp-release@sha256:f8ba6f54eae419aba17926417d950ae18e06021beae9d7947a8b8243ad48353a |
+|**`get_ocp_image_url`** | string | No default value | Discovered OCP image container URL | `registry.ci.openshift.org/ocp/release:4.12.0-0.nightly-2023-11-08-101917` |
 
 ## Dependencies
 

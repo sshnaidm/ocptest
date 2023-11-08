@@ -1,2 +1,11 @@
 # ocptest
-Example of ideal OCP Ansible collection
+
+Example of OCP Ansible collection for OCP deployments
+
+## Roles
+
+...
+
+## Playbooks
+
+...
