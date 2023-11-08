@@ -1,0 +1,6 @@
+---
+- name: Get OCP version for 4.12.40
+  import_role:
+    name: sshnaidm.ocptest.get_ocp_image
+  vars:
+    get_ocp_image_full_version: "{{ ocp_version_full_version | default('4.12.40') }}"

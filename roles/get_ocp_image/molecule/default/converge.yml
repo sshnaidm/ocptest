@@ -1,0 +1,11 @@
+---
+- name: Converge
+  hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: "Include get_ocp_image"
+      ansible.builtin.include_role:
+        name: "sshnaidm.ocptest.get_ocp_image"
+      vars:
+        get_ocp_image_tag: "4.12"
+        get_ocp_image_release: "stable"

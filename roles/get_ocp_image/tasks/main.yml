@@ -1,0 +1,16 @@
+---
+# tasks file for get_ocp_image
+- name: Get OCP version
+  sshnaidm.ocptest.ocp_image:
+    tag: "{{ get_ocp_image_tag | default(omit) }}"
+    release: "{{ get_ocp_image_release | default(omit) }}"
+    full_tag: "{{ get_ocp_image_full_version | default(omit) }}"
+  register: ocp_version_result
+
+- name: Print OCP image
+  debug:
+    msg: "OCP image is {{ ocp_version_result.ocp_image }}"
+
+- name: Set fact for role
+  set_fact:
+    get_ocp_image_url: "{{ ocp_version_result.ocp_image }}"

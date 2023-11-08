@@ -1,0 +1,26 @@
+namespace: sshnaidm
+name: ocptest
+version: 0.0.1
+readme: README.md
+authors:
+  - Sagi Shnaidman <sshnaidm@redhat.com>
+description: OCP(test) Ansible modules
+license:
+  - GPL-3.0-or-later
+tags:
+  - ocp(test)
+dependencies: {}
+repository: https://github.com/sshnaidm/ocptest
+documentation: https://sshnaidm.github.io/ocptest/
+homepage: https://github.com/sshnaidm/ocptest
+issues: https://github.com/sshnaidm/ocptest/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc
+build_ignore:
+  - ci
+  - tests/output
+  - build_artifact
+  - "*.tar.gz"
+  - ".gitignore"
+  - ".history"
+  - ".vscode"
+  - ".idea"
+  - ".github"
